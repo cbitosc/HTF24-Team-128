@@ -1,5 +1,5 @@
 .navbar {
-    background: #ffd8c5; /* Transparent background */
+    background: #FFF2F0; /* Transparent background */
     box-shadow: #f0ecff; /* Neon purple glow */
     padding: 10px 20px;
     position: fixed;
@@ -8,12 +8,11 @@
 }
 
 .navbar-brand {
-    color: #00ffff; /* Neon cyan color */
     font-weight: bold;
 }
 
 .navbar-brand:hover {
-    color: #ff00ff; /* Neon purple on hover */
+    color: #f95252; /* Neon purple on hover */
 }
 
 .navbar-nav .nav-item {
@@ -21,38 +20,36 @@
 }
 
 .navbar-nav .nav-link {
-    color: #00ffff; /* Neon cyan color */
     font-weight: bold;
     position: relative;
-    text-shadow: 0 0 5px rgba(255, 0, 255, 0.8); /* Neon purple glow */
+    text-shadow: 0 0 5px #f95252; /* Neon purple glow */
     padding-left: 10px; /* Optional padding adjustment */
     padding-right: 10px; /* Optional padding adjustment */
 }
 
 .navbar-nav .nav-link.active {
-    color: #ff00ff; /* Neon purple color for active link */
-    text-shadow: 0 0 10px rgba(255, 0, 255, 1); /* Stronger glow for active link */
+    color: #f95252; /* Neon purple color for active link */
+    text-shadow: 0 0 10px #f95252; /* Stronger glow for active link */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff00ff; /* Neon purple on hover */
-    text-shadow: 0 0 10px rgba(255, 0, 255, 1); /* Stronger glow on hover */
+    color: #f95252; /* Neon purple on hover */
+    text-shadow: 0 0 10px #f95252; /* Stronger glow on hover */
 }
 
 .navbar .transparent-logout {
     background: transparent; /* Make background transparent */
     border: none; /* Remove border */
-    color: #00ffff; /* Match neon cyan color */
     padding: 10px 15px; /* Add padding to increase size */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-weight: bold; /* Make the text bold to match other links */
-    text-shadow: 0 0 5px rgba(255, 0, 255, 0.8); /* Add neon purple glow */
+    text-shadow: 0 0 5px #f95252; /* Add neon purple glow */
     font-size: 1rem; /* Adjust font size as needed */
     line-height: 1.5; /* Adjust line height for better vertical alignment */
 }
 
 .navbar .transparent-logout:hover {
-    color: #ff00ff; /* Change color to neon purple on hover */
-    text-shadow: 0 0 10px rgba(255, 0, 255, 1); /* Stronger glow on hover */
+    color: #f95252; /* Change color to neon purple on hover */
+    text-shadow: 0 0 10px #f95252; /* Stronger glow on hover */
     opacity: 0.7; /* Optional: add hover effect for better visibility */
 }
