@@ -1,0 +1,19 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Softer font for a calm effect */
+  background: #f8f3f8; /* Light pastel background */
+  color: #5a5a5a; /* Soft gray for text */
+}
+
+.background {
+  background-color: #fefaf3; /* Light beige for a warm, inviting effect */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05); /* Soft inner shadow for depth */
+}
