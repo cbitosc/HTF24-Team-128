@@ -29,6 +29,9 @@ const Navbar = ({ userName, setUserName }) => {
                                 <span className="nav-link">{userName}</span>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" to="/calender">Plan</Link>
+                            </li>
+                            <li className="nav-item">
                                 <button className="nav-link btn btn-link transparent-logout" onClick={handleLogout}>
                                     <FontAwesomeIcon icon={faSignOutAlt} title="Logout" /> {/* Logout icon */}
                                 </button>
