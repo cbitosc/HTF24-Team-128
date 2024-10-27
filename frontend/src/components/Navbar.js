@@ -41,6 +41,12 @@ const Navbar = ({ userName, setUserName }) => {
                                 <Link className="nav-link" to="/wardrobe">Wardrobe</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" to="/joincontest">Join Contest</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contest">Contest</Link>
+                            </li>
+                            <li className="nav-item">
                                 <button className="nav-link btn btn-link transparent-logout" onClick={handleLogout}>
                                     <FontAwesomeIcon icon={faSignOutAlt} title="Logout" /> {/* Logout icon */}
                                 </button>

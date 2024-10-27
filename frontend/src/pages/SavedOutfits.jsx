@@ -1,6 +1,5 @@
 // src/pages/SavedOutfits.jsx
 import axios from 'axios';
-import PropTypes from 'prop-types'; // Import PropTypes
 import React, { useEffect, useState } from 'react';
 import '../assets/css/SavedOutfits.css'; // Ensure you have this CSS file
 
@@ -49,11 +48,6 @@ const SavedOutfits = ({ currentUserId }) => {
       </div>
     </div>
   );
-};
-
-// Define prop types
-SavedOutfits.propTypes = {
-  currentUserId: PropTypes.string.isRequired, // Specify that currentUserId is a required string
 };
 
 export default SavedOutfits;

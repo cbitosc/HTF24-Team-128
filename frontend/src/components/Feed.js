@@ -1,6 +1,5 @@
 // src/pages/Feed.jsx
 import axios from 'axios';
-import PropTypes from 'prop-types'; // Import PropTypes
 import React, { useEffect, useState } from 'react';
 import '../assets/css/Feed.css';
 
@@ -15,7 +14,7 @@ const Feed = ({ currentUserId }) => {
         const response = await axios.get('http://localhost:5500/api/outfits');
         setOutfits(response.data);
       } catch (err) {
-        setError(err.response?.data?.message || 'Error fetching outfits');
+        setError('Error fetching outfits');
       } finally {
         setLoading(false);
       }
@@ -27,9 +26,10 @@ const Feed = ({ currentUserId }) => {
   const handleLike = async (outfitId) => {
     try {
       const response = await axios.post(`http://localhost:5500/api/outfits/${outfitId}/like`, { userId: currentUserId });
+      // Update the outfits state with the liked outfit
       setOutfits((prevOutfits) =>
         prevOutfits.map((outfit) =>
-          outfit._id === outfitId ? { ...outfit, likes: response.data.likes } : outfit
+          outfit._id === outfitId ? { ...outfit, likes: response.data.likes } : outfit // Ensure user data is retained
         )
       );
     } catch (err) {
@@ -62,11 +62,6 @@ const Feed = ({ currentUserId }) => {
       </div>
     </div>
   );
-};
-
-// Define prop types
-Feed.propTypes = {
-  currentUserId: PropTypes.string.isRequired, // Specify that currentUserId is a required string
 };
 
 export default Feed;
