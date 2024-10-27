@@ -6,30 +6,6 @@ body {
     text-align: center;
     margin: 0; /* Remove default margin */
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
-/* Headings */
-h1 {
-    margin-top: 20px;
-    font-size: 2.5em;
-    color: #4a4a4a; /* Darker gray for contrast */
-}
-
-/* Button styles */
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6200ea; /* Primary color */
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-button:hover {
-    background-color: #3700b3; /* Darker shade for hover */
 }
 
 /* Calendar layout */
@@ -38,6 +14,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
 }
 
 /* Individual day styling */
@@ -55,24 +32,10 @@ button:hover {
     background-color: white; /* White background for days */
     transition: background-color 0.2s ease; /* Smooth transition for selection */
     font-size: 0.8em; /* Smaller font size for calendar numbers */
+    overflow: hidden; /* Prevent overflow issues */
 }
 
-/* Adjust font size for the numbers specifically */
-.day p {
-    margin: 0; /* Remove default margins */
-    font-size: 0.8em; /* Smaller font size for text inside day */
-}
-
-/* Hover effect for days */
-.day:hover {
-    background-color: #e0e0e0; /* Light gray background on hover */
-}
-
-/* Selected day styling */
-.selected {
-    background-color: #d1c4e9; /* Light purple for selected */
-}
-
+/* Recommendation section */
 /* Recommendation section */
 #recommendation {
     margin-top: 20px;
@@ -83,18 +46,8 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     max-height: 300px; /* Limit the height */
     overflow-y: auto; /* Enable vertical scrolling */
-}
-
-/* Recommendation heading */
-#recommendation h3 {
-    color: #4a4a4a; /* Darker gray for contrast */
-}
-
-/* Outfit image styling */
-#recommendation img {
-    width: 100px;
-    border-radius: 5px; /* Rounded corners for images */
-    margin: 10px 0; /* Space around images */
+    display: flex; /* Ensure it respects height */
+    flex-direction: column; /* Stack items vertically */
 }
 
 /* Input section styling */

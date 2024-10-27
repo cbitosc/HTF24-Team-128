@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins font */
+}
+
+.upload-analysis {
+    text-align: center;
+    padding: 20px;
+    background-color: #fefaf6; /* Matches the body background */
+}
+
+.animated-header {
+    font-size: 36px;
+    color: #8b5e34; /* Matches the logo and headings */
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+.instructions {
+    font-size: 18px;
+    color: #555; /* Light gray for instructions */
+    margin-bottom: 30px;
+}
+
+.analysis-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items in the form */
+}
+
+.question-box {
+    background-color: #fff; /* White background for questions */
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Space between questions */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 80%; /* Control width of question box */
+    animation: slideIn 0.5s ease-in-out; /* Added slide-in animation */
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Stack options vertically */
+    align-items: flex-start; /* Align options to the left */
+    margin: 10px 0;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center; /* Center the image and text */
+    margin: 10px 0; /* Space between options */
+    background-color: #f0f0f0; /* Light background for option */
+    border: 2px solid #8b5e34; /* Outline color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside option box */
+    width: calc(100% - 20px); /* Full width minus padding */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.radio-option:hover {
+    background-color: #e0e0e0; /* Darker background on hover */
+}
+
+.radio-option img {
+    width: 30px; /* Set size for the option image */
+    height: 30px; /* Set size for the option image */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ffd8c5; /* Matches the header */
+    color: #8b5e34; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    animation: fadeIn 1.5s ease-in-out; /* Added fade-in animation */
+}
+
+.submit-button:hover {
+    background-color: #ffb49b; /* Change background on hover */
+}
+
+.analysis-results {
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Soft background for results */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+}
+
+.analysis-results h3 {
+    color: #8b5e34; /* Heading color */
+    margin-bottom: 10px;
+}
+
+.analysis-results p {
+    color: #555; /* Consistent text color for results */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
