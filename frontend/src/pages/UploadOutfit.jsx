@@ -1,4 +1,3 @@
-// src/pages/UploadOutfit.jsx
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
@@ -26,19 +25,18 @@ const UploadOutfit = ({ currentUserId }) => {
     const formData = new FormData();
     formData.append('image', file);
     formData.append('caption', caption);
-    formData.append('userId', currentUserId); // Include userId
+    formData.append('userId', currentUserId);
 
-    const token = localStorage.getItem('token'); // Retrieve the token
+    const token = localStorage.getItem('token');
 
     try {
       setUploading(true);
       const response = await axios.post('http://localhost:5500/api/outfits', formData, {
         headers: {
-          Authorization: `Bearer ${token}`, // Add token to the request headers
+          Authorization: `Bearer ${token}`,
         },
       });
       console.log('Outfit uploaded successfully:', response.data);
-      // Optionally reset the form or show a success message
       setCaption('');
       setFile(null);
     } catch (error) {

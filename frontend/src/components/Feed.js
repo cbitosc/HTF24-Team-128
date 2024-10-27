@@ -2,7 +2,7 @@
 import axios from 'axios';
 import PropTypes from 'prop-types'; // Import PropTypes
 import React, { useEffect, useState } from 'react';
-import '../styles/Feed.css';
+import '../assets/css/Feed.css';
 
 const Feed = ({ currentUserId }) => {
   const [outfits, setOutfits] = useState([]);

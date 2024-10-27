@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../assets/css/Login.css';
 
-function Login({ setUserName }) {
+function Login({ setCurrentUserId, setUserName }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -26,6 +26,7 @@ function Login({ setUserName }) {
         
             console.log(response.data); // Check the response structure
             if (response.data.token) { // Check if token is in the response
+                setCurrentUserId(response.data.user.id); // Set the user ID
                 setUserName(response.data.user.name); // Set user name on successful login
                 localStorage.setItem('token', response.data.token); // Store JWT
                 navigate('/'); // Redirect to task page
@@ -105,6 +106,7 @@ function Login({ setUserName }) {
 // PropTypes validation
 Login.propTypes = {
     setUserName: PropTypes.func.isRequired,
+    setCurrentUserId: PropTypes.func.isRequired,
 };
 
 export default Login;
