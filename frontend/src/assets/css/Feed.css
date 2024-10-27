@@ -1,0 +1,90 @@
+/* src/styles/Feed.css */
+.feed {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f8f3f8; /* Background color */
+}
+
+.feed h2 {
+    font-family: 'Poppins', sans-serif; /* Futuristic font for heading */
+    font-size: 2.5rem; /* Larger font size for prominence */
+    text-align: center; /* Center the heading */
+    color: #f77b94; /* Hot pink color for a stylish look */
+    margin-bottom: 20px; /* Spacing below the heading */
+    position: relative; /* Positioning for pseudo-elements */
+    letter-spacing: 2px; /* Increased letter spacing for a modern touch */
+}
+
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between items */
+}
+
+.feed-post {
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container {
+    position: relative; /* Position relative for child elements */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 15px;
+}
+
+.image-container img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline-block space */
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute; /* Overlay position */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Column layout for overlay content */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Smooth fade-in effect */
+    border-radius: 20px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+    
+}
+
+.feed-post-caption {
+    font-weight: bold; /* Bold caption */
+    margin-bottom: 5px; /* Space below caption */
+    text-align: center; /* Center caption */
+}
+
+.feed-post-user {
+    font-size: 0.9rem; /* Slightly smaller user text */
+    color: #eee; /* Light color for user text */
+    margin-bottom: 10px; /* Space below user text */
+}
+
+.feed-post-like-button {
+    background-color: #f77b94; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Button padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth color change */
+    font-weight: bold; /* Bold button text */
+    
+}
+
+.feed-post-like-button:hover {
+    background-color: #ff4d70; /* Darker shade on hover */
+}

@@ -1,10 +1,16 @@
+require('dotenv').config(); 
+console.log('MONGO_URI:', process.env.MONGO_URI); // Debugging output
+console.log('JWT_SECRET:', process.env.JWT_SECRET); // Debugging output
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-require('dotenv').config(); // Load environment variables from .env file
+// Load environment variables from .env file
 const userRoutes = require('./routes/userRoutes');
+const outfitRoutes = require('./routes/outfitRoutes');
+const upload = require('./middleware/multer'); // Add this line
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = process.env.PORT || 5500; // Use port from .env or default to 5500
@@ -17,6 +23,11 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use(express.json()); // Use Express built-in JSON parser
+// Use multer in the outfit route
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/uploads', express.static('uploads')); // Serve uploads folder
+app.use('/', outfitRoutes);
 
 // MongoDB Connection
 const uri = process.env.MONGO_URI; // Use the connection string from .env
@@ -29,7 +40,10 @@ if (!uri || !sessionSecret) {
 }
 
 // Connect to MongoDB without deprecated options
-mongoose.connect(uri)
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
     .then(() => console.log('MongoDB connected'))
     .catch(err => {
         console.error('MongoDB connection error:', err);
@@ -55,6 +69,7 @@ app.use(session({
 
 // Routes
 app.use('/api/users', userRoutes); // User routes
+app.use('/api/outfits', outfitRoutes); // Add this line
 
 // Global error handling middleware
 app.use((err, req, res, next) => {

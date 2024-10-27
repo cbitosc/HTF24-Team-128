@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f9eceb; /* Light pastel background */
     color: #3d3d3d; /* Soft dark gray for text */
 }
@@ -16,7 +16,7 @@ body, html {
     position: relative;
     z-index: 10;
     margin-top: 50px;
-    font-family: 'Roboto', sans-serif; /* Softer font for more elegance */
+    font-family: 'Poppins', sans-serif; /* Softer font for more elegance */
 }
 
 .login-container h2 {

@@ -1,200 +1,124 @@
 /* General styles */
-.calendar-page {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #4A4A4A;
-    background-color: #FFFFFF; /* White background for a cleaner look */
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #EFEFEF; /* Light border for structure */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Light gray background for a softer look */
+    color: #333;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
+/* Headings */
 h1 {
-    color: #A4746D; /* Soft color for heading */
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-/* Calendar container */
-.calendar-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-/* Calendar styles */
-.react-calendar {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF; /* White background for a clean look */
-    font-family: 'Arial', sans-serif;
-}
-
-/* Calendar header styling */
-.react-calendar__navigation {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFD9DB; /* Soft pink header background */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    padding: 10px;
-    color: #A4746D; /* White text for contrast */
-    font-weight: bold;
-    border: none; /* Removes any top border */
-    box-shadow: none; /* Ensures no shadow effect */
-}
-
-.react-calendar__navigation button {
-    color: #A4746D;
-    font-size: 1rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.react-calendar__navigation button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slight hover effect */
-    border-radius: 4px;
-}
-
-/* Weekdays header styling */
-.react-calendar__month-view__weekdays {
-    text-align: center;
-    background-color: #FFF2F0; /* Light background for weekdays */
-    font-weight: bold;
-    color: #A4746D; /* Soft text color */
-    padding: 8px 0;
-    border-bottom: none; /* Removes bottom border */
-    box-shadow: inset 0 -1px 0 #EFEFEF; /* Optional subtle line for separation */
-    border-top: none; /* Ensures no top border */
-}
-
-.react-calendar__month-view__weekdays__weekday {
-    font-size: 0.9rem;
-    border: none; /* Removes borders from weekdays */
-}
-
-.react-calendar__tile {
-    border: none;
-    border-radius: 6px;
-    background-color: #FFFFFF;
-    padding: 10px;
-    margin: 4px;
-    text-align: center;
-    font-size: 1rem;
-    color: #4A4A4A;
-    transition: background-color 0.3s ease;
-}
-
-.react-calendar__tile--now {
-    background-color: #FFECEC; /* Light pink background for today */
-    color: #A4746D;
-    font-weight: bold;
-}
-
-.react-calendar__tile--active {
-    background-color: #FFD9DB; /* Soft pink background for selected date */
-    color: #FFFFFF;
-    font-weight: bold;
-    border: 1px solid #A4746D; /* Slight border for emphasis */
-}
-
-.react-calendar__tile:hover {
-    background-color: #FAF0EF; /* Light hover color */
-    cursor: pointer;
-}
-
-.react-calendar__tile--hasActive:hover {
-    background-color: #FFD9DB; /* Keep selected color on hover */
-}
-
-/* Form styles */
-.activity-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.activity-form label {
-    font-weight: bold;
-    color: #A4746D; /* Soft color for labels */
-    font-size: 1rem;
-}
-
-.activity-form input {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #EFEFEF;
-    border-radius: 6px;
-    outline: none;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.activity-form input:focus {
-    border-color: #A4746D; /* Focus color matching label */
-}
-
-.activity-form button {
-    background-color: #A4746D; /* Soft button color */
-    color: #FFFFFF;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.activity-form button:hover {
-    background-color: #D9B8B3; /* Hover color similar to button */
-}
-
-/* Outfit suggestion box */
-.outfit-suggestion {
-    background-color: #FAF8F6; /* Light background color for suggestion box */
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    font-size: 2.5em;
+    color: #4a4a4a; /* Darker gray for contrast */
 }
 
-.outfit-suggestion h2 {
-    color: #A4746D;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* Primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.outfit-suggestion p,
-.outfit-suggestion ul li {
-    color: #4A4A4A;
-    font-size: 1rem;
-    line-height: 1.6;
+button:hover {
+    background-color: #3700b3; /* Darker shade for hover */
 }
 
-/* List styling for activities */
-.outfit-suggestions ul {
-    padding: 0;
-    list-style-type: none;
+/* Calendar layout */
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
-.outfit-suggestions li {
-    margin-bottom: 10px;
+/* Individual day styling */
+.day {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: white; /* White background for days */
+    transition: background-color 0.2s ease; /* Smooth transition for selection */
+    font-size: 0.8em; /* Smaller font size for calendar numbers */
 }
 
-.outfit-suggestions li strong {
-    color: #A4746D; /* Color match with title */
+/* Adjust font size for the numbers specifically */
+.day p {
+    margin: 0; /* Remove default margins */
+    font-size: 0.8em; /* Smaller font size for text inside day */
+}
+
+/* Hover effect for days */
+.day:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/* Selected day styling */
+.selected {
+    background-color: #d1c4e9; /* Light purple for selected */
+}
+
+/* Recommendation section */
+#recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: #ffffff; /* White background for recommendations */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Recommendation heading */
+#recommendation h3 {
+    color: #4a4a4a; /* Darker gray for contrast */
+}
+
+/* Outfit image styling */
+#recommendation img {
+    width: 100px;
+    border-radius: 5px; /* Rounded corners for images */
+    margin: 10px 0; /* Space around images */
+}
+
+/* Input section styling */
+#inputSection {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff; /* White background for input section */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input and select styles */
+input[type="date"],
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    width: 150px; /* Set width for inputs */
+}
+
+/* Placeholder color for inputs */
+input::placeholder, 
+select option {
+    color: #999; /* Soft gray for placeholder */
 }

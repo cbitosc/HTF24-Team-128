@@ -1,77 +1,108 @@
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
+import React, { useEffect, useState } from 'react';
 import '../assets/css/Calender.css';
 
-const CalendarPage = () => {
-    const [selectedDate, setSelectedDate] = useState(new Date());
+const Calendar = () => {
+    const [inventory] = useState([
+        { id: 1, type: "T-shirt", color: "Blue", mood: "Motivated", image: "/images/tshirt1.jpg", name: "Azure Breeze T-shirt" },
+        { id: 2, type: "Dress", color: "Red", mood: "Excited", image: "/images/dress2.jpg", name: "Scarlet Affair Dress" },
+        { id: 3, type: "Shorts", color: "White", mood: "Chill", image: "/images/shorts1.jpg", name: "Ivory Summer Shorts" },
+        { id: 4, type: "Jacket", color: "Green", mood: "Relaxed", image: "/images/jacket1.jpg", name: "Emerald Explorer Jacket" },
+        { id: 5, type: "Pants", color: "Gray", mood: "Happy", image: "/images/pants1.jpg", name: "Silver Mist Pants" },
+    ]);
+
+    const [selectedDate, setSelectedDate] = useState(null);
+    const [calendarDays, setCalendarDays] = useState([]);
     const [activity, setActivity] = useState('');
-    const [activities, setActivities] = useState([]); // Array to store multiple activities
-  
-    // Mock function to get outfit based on activity
-    const getOutfitSuggestion = (activity) => {
-      switch (activity.toLowerCase()) {
-        case 'gym':
-          return 'Workout clothes, sneakers, water bottle';
-        case 'office':
-          return 'Formal wear, blazer, leather shoes';
-        case 'party':
-          return 'Casual dress, trendy shoes, accessories';
-        case 'casual':
-          return 'T-shirt, jeans, sneakers';
-        default:
-          return 'No outfit suggestion available';
-      }
+    const [mood, setMood] = useState('');
+    const [recommendations, setRecommendations] = useState([]);
+
+    useEffect(() => {
+        generateCalendar();
+    }, []);
+
+    const toggleInput = () => {
+        const inputSection = document.getElementById("inputSection");
+        inputSection.style.display = inputSection.style.display === "none" ? "block" : "none";
     };
-  
-    const handleDateChange = (date) => {
-      setSelectedDate(date);
+
+    const generateCalendar = () => {
+        const today = new Date();
+        const month = today.getMonth();
+        const year = today.getFullYear();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const daysArray = Array.from({ length: daysInMonth }, (_, i) => `${year}-${month + 1}-${i + 1}`);
+        setCalendarDays(daysArray);
     };
-  
-    const handleActivityChange = (event) => {
-      setActivity(event.target.value);
+
+    const addActivity = () => {
+        if (!selectedDate || !activity || !mood) {
+            alert("Please fill in all fields.");
+            return;
+        }
+        const dayIndex = calendarDays.findIndex(date => date === selectedDate);
+        if (dayIndex !== -1) {
+            recommendOutfit(mood);
+        }
     };
-  
-    const handleAddActivity = (event) => {
-      event.preventDefault();
-      if (activity) {
-        const outfit = getOutfitSuggestion(activity);
-        setActivities([...activities, { activity, outfit }]); // Add new activity to the list
-        setActivity(''); // Clear input field after adding activity
-      }
+
+    const recommendOutfit = (mood) => {
+        const filteredOutfits = inventory.filter(item => item.mood === mood);
+        setRecommendations(filteredOutfits.length > 0 ? filteredOutfits : null);
     };
-  
+
     return (
-      <div className="calendar-page">
-        <h1>Plan Your Day</h1>
-        <div className="calendar-container">
-          <Calendar onChange={handleDateChange} value={selectedDate} />
+        <div>
+            <h1>Clothing Recommendations Calendar</h1>
+            <button onClick={toggleInput}>Add Activity</button>
+
+            <div id="inputSection" style={{ display: 'none' }}>
+                <input type="date" onChange={(e) => setSelectedDate(e.target.value)} />
+                <select onChange={(e) => setActivity(e.target.value)} value={activity}>
+                    <option value="">Select Activity</option>
+                    <option value="Gym">Gym</option>
+                    <option value="Office">Office</option>
+                    <option value="Party">Party</option>
+                    <option value="Picnic">Picnic</option>
+                    <option value="Beach">Beach</option>
+                </select>
+                <select onChange={(e) => setMood(e.target.value)} value={mood}>
+                    <option value="">Select Mood</option>
+                    <option value="Motivated">Motivated</option>
+                    <option value="Chill">Chill</option>
+                    <option value="Happy">Happy</option>
+                    <option value="Excited">Excited</option>
+                    <option value="Relaxed">Relaxed</option>
+                </select>
+                <button onClick={addActivity}>Add Activity</button>
+            </div>
+
+            <div id="calendar">
+                {calendarDays.map(day => (
+                    <div
+                        key={day}
+                        className={`day ${selectedDate === day ? 'selected' : ''}`}
+                        onClick={() => setSelectedDate(day)}
+                    >
+                        {new Date(day).getDate()}
+                    </div>
+                ))}
+            </div>
+
+            <div id="recommendation">
+                <h3>Recommended Outfits for {mood} Mood:</h3>
+                {recommendations ? (
+                    recommendations.map(outfit => (
+                        <div key={outfit.id}>
+                            <h4>{outfit.name}</h4>
+                            <img src={outfit.image} alt={outfit.name} style={{ width: '100px' }} />
+                        </div>
+                    ))
+                ) : (
+                    <p>No outfits available for this mood.</p>
+                )}
+            </div>
         </div>
-        <form className="activity-form" onSubmit={handleAddActivity}>
-          <label htmlFor="activity">Add Activity</label>
-          <input
-            type="text"
-            id="activity"
-            value={activity}
-            onChange={handleActivityChange}
-            placeholder="e.g., Gym, Office, Party"
-            required
-          />
-          <button type="submit">Add Activity</button>
-        </form>
-        {activities.length > 0 && (
-          <div className="outfit-suggestions">
-            <h2>Outfit Suggestions</h2>
-            <ul>
-              {activities.map((item, index) => (
-                <li key={index}>
-                  <strong>{item.activity}:</strong> {item.outfit}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
     );
-  };
-  
-  export default CalendarPage;
+};
+
+export default Calendar;

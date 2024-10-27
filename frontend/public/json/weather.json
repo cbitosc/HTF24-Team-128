@@ -1,0 +1,130 @@
+{
+    "month": "October",
+    "year": 2024,
+    "days": [
+        {
+            "date": "2024-10-01",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-02",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-03",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-04",
+            "weather": "Rainy"
+        },
+        {
+            "date": "2024-10-05",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-06",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-07",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-08",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-09",
+            "weather": "Rainy"
+        },
+        {
+            "date": "2024-10-10",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-11",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-12",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-13",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-14",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-15",
+            "weather": "Rainy"
+        },
+        {
+            "date": "2024-10-16",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-17",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-18",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-19",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-20",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-21",
+            "weather": "Rainy"
+        },
+        {
+            "date": "2024-10-22",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-23",
+            "weather": "Joyful"
+        },
+        {
+            "date": "2024-10-24",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-25",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-26",
+            "weather": "Rainy"
+        },
+        {
+            "date": "2024-10-27",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-28",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-29",
+            "weather": "Sunny"
+        },
+        {
+            "date": "2024-10-30",
+            "weather": "Cloudy"
+        },
+        {
+            "date": "2024-10-31",
+            "weather": "Rainy"
+        }
+    ]
+}
