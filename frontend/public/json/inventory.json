@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "type": "T-shirt",
+        "color": "Blue",
+        "style": "Casual",
+        "image": "./images/tshirt1.jpg",
+        "name": "Azure Breeze T-shirt"
+    },
+    {
+        "id": 2,
+        "type": "Jeans",
+        "color": "Black",
+        "style": "Denim",
+        "image": "./images/jeans1.jpg",
+        "name": "Midnight Noir Jeans"
+    },
+    {
+        "id": 3,
+        "type": "Sweater",
+        "color": "Red",
+        "style": "Casual",
+        "image": "./images/sweater1.jpg",
+        "name": "Crimson Comfort Sweater"
+    },
+    {
+        "id": 4,
+        "type": "Jacket",
+        "color": "Green",
+        "style": "Outdoor",
+        "image": "./images/jacket1.jpg",
+        "name": "Emerald Explorer Jacket"
+    },
+    {
+        "id": 5,
+        "type": "Shorts",
+        "color": "White",
+        "style": "Casual",
+        "image": "./images/shorts1.jpg",
+        "name": "Ivory Summer Shorts"
+    },
+    {
+        "id": 6,
+        "type": "Dress",
+        "color": "Black",
+        "style": "Formal",
+        "image": "./images/dress1.jpg",
+        "name": "Ebon Elegance Dress"
+    },
+    {
+        "id": 7,
+        "type": "Skirt",
+        "color": "Blue",
+        "style": "Casual",
+        "image": "./images/skirt1.jpg",
+        "name": "Cerulean Whirl Skirt"
+    },
+    {
+        "id": 8,
+        "type": "Blouse",
+        "color": "Pink",
+        "style": "Formal",
+        "image": "./images/blouse1.jpg",
+        "name": "Rose Quartz Blouse"
+    },
+    {
+        "id": 9,
+        "type": "Pants",
+        "color": "Gray",
+        "style": "Casual",
+        "image": "./images/pants1.jpg",
+        "name": "Silver Mist Pants"
+    },
+    {
+        "id": 10,
+        "type": "Coat",
+        "color": "Navy",
+        "style": "Winter",
+        "image": "./images/coat1.jpg",
+        "name": "Navy Voyager Coat"
+    },
+    {
+        "id": 11,
+        "type": "T-shirt",
+        "color": "White",
+        "style": "Casual",
+        "image": "./images/tshirt2.jpg",
+        "name": "Pure Essence T-shirt"
+    },
+    {
+        "id": 12,
+        "type": "Jeans",
+        "color": "Light Blue",
+        "style": "Denim",
+        "image": "./images/jeans2.jpeg",
+        "name": "Skyline Denim Jeans"
+    },
+    {
+        "id": 13,
+        "type": "Sweater",
+        "color": "Gray",
+        "style": "Casual",
+        "image": "./images/sweater2.jpg",
+        "name": "Slate Serenity Sweater"
+    },
+    {
+        "id": 14,
+        "type": "Jacket",
+        "color": "Black",
+        "style": "Outdoor",
+        "image": "./images/jacket2.jpg",
+        "name": "Obsidian Adventure Jacket"
+    },
+    {
+        "id": 15,
+        "type": "Shorts",
+        "color": "Blue",
+        "style": "Casual",
+        "image": "./images/shorts2.jpg",
+        "name": "Blue Horizon Shorts"
+    },
+    {
+        "id": 16,
+        "type": "Dress",
+        "color": "Red",
+        "style": "Casual",
+        "image": "./images/dress2.jpg",
+        "name": "Scarlet Affair Dress"
+    },
+    {
+        "id": 17,
+        "type": "Skirt",
+        "color": "Black",
+        "style": "Formal",
+        "image": "./images/skirt2.jpg",
+        "name": "Onyx Charm Skirt"
+    },
+    {
+        "id": 18,
+        "type": "Blouse",
+        "color": "White",
+        "style": "Formal",
+        "image": "./images/blouse2.jpg",
+        "name": "Pearl Essence Blouse"
+    },
+    {
+        "id": 19,
+        "type": "Pants",
+        "color": "Black",
+        "style": "Formal",
+        "image": "./images/pants2.jpg",
+        "name": "Raven Classic Pants"
+    },
+    {
+        "id": 20,
+        "type": "Coat",
+        "color": "Brown",
+        "style": "Winter",
+        "image": "./images/coat2.jpg",
+        "name": "Cocoa Warmth Coat"
+    },
+    {
+        "id": 21,
+        "type": "T-shirt",
+        "color": "Yellow",
+        "style": "Casual",
+        "image": "./images/tshirt3.jpg",
+        "name": "Golden Glow T-shirt"
+    },
+    {
+        "id": 22,
+        "type": "Jeans",
+        "color": "Dark Blue",
+        "style": "Denim",
+        "image": "./images/jeans3.jpeg",
+        "name": "Sapphire Dream Jeans"
+    },
+    {
+        "id": 23,
+        "type": "Sweater",
+        "color": "Black",
+        "style": "Casual",
+        "image": "./images/sweater3.jpg",
+        "name": "Charcoal Comfort Sweater"
+    },
+    {
+        "id": 24,
+        "type": "Jacket",
+        "color": "Red",
+        "style": "Outdoor",
+        "image": "./images/jacket3.jpg",
+        "name": "Crimson Trail Jacket"
+    },
+    {
+        "id": 25,
+        "type": "Shorts",
+        "color": "Gray",
+        "style": "Casual",
+        "image": "./images/shorts3.jpg",
+        "name": "Granite Play Shorts"
+    },
+    {
+        "id": 26,
+        "type": "Dress",
+        "color": "Green",
+        "style": "Formal",
+        "image": "./images/dress3.jpg",
+        "name": "Verdant Luxe Dress"
+    },
+    {
+        "id": 27,
+        "type": "Skirt",
+        "color": "White",
+        "style": "Casual",
+        "image": "./images/skirt3.jpg",
+        "name": "Snowy Bliss Skirt"
+    },
+    {
+        "id": 28,
+        "type": "Blouse",
+        "color": "Purple",
+        "style": "Formal",
+        "image": "./images/blouse3.jpg",
+        "name": "Amethyst Dream Blouse"
+    },
+    {
+        "id": 29,
+        "type": "Pants",
+        "color": "Beige",
+        "style": "Casual",
+        "image": "./images/pants3.jpg",
+        "name": "Sandstone Ease Pants"
+    },
+    {
+        "id": 30,
+        "type": "Coat",
+        "color": "Black",
+        "style": "Winter",
+        "image": "./images/coat3.jpg",
+        "name": "Jet Black Winter Coat"
+    },
+    {
+        "id": 31,
+        "type": "T-shirt",
+        "color": "Pink",
+        "style": "Casual",
+        "image": "./images/tshirt4.jpg",
+        "name": "Blush Petal T-shirt"
+    },
+    {
+        "id": 32,
+        "type": "Jeans",
+        "color": "Olive",
+        "style": "Denim",
+        "image": "./images/jeans4.jpg",
+        "name": "Olive Grove Jeans"
+    },
+    {
+        "id": 33,
+        "type": "Sweater",
+        "color": "Blue",
+        "style": "Casual",
+        "image": "./images/sweater4.jpg",
+        "name": "Azure Waves Sweater"
+    },
+    {
+        "id": 34,
+        "type": "Jacket",
+        "color": "Gray",
+        "style": "Outdoor",
+        "image": "./images/jacket4.jpg",
+        "name": "Steel Horizon Jacket"
+    },
+    {
+        "id": 35,
+        "type": "Shorts",
+        "color": "Black",
+        "style": "Casual",
+        "image": "./images/shorts4.jpg",
+        "name": "Shadow Play Shorts"
+    },
+    {
+        "id": 36,
+        "type": "Dress",
+        "color": "Yellow",
+        "style": "Casual",
+        "image": "./images/dress4.jpg",
+        "name": "Sunshine Delight Dress"
+    },
+    {
+        "id": 37,
+        "type": "Skirt",
+        "color": "Red",
+        "style": "Formal",
+        "image": "./images/skirt4.jpg",
+        "name": "Ruby Elegance Skirt"
+    },
+    {
+        "id": 38,
+        "type": "Blouse",
+        "color": "Black",
+        "style": "Formal",
+        "image": "./images/blouse4.jpg",
+        "name": "Jade Grace Blouse"
+    },
+    {
+        "id": 39,
+        "type": "Pants",
+        "color": "White",
+        "style": "Formal",
+        "image": "./images/pants4.jpg",
+        "name": "Alabaster Ease Pants"
+    },
+    {
+        "id": 40,
+        "type": "Coat",
+        "color": "Blue",
+        "style": "Winter",
+        "image": "./images/coat4.jpg",
+        "name": "Cobalt Comfort Coat"
+    },
+    {
+        "id": 41,
+        "type": "T-shirt",
+        "color": "Gray",
+        "style": "Casual",
+        "image": "./images/tshirt5.jpg",
+        "name": "Cloudy Day T-shirt"
+    },
+    {
+        "id": 42,
+        "type": "Jeans",
+        "color": "Black",
+        "style": "Denim",
+        "image": "./images/jeans5.jpg",
+        "name": "Ebony Classic Jeans"
+    },
+    {
+        "id": 43,
+        "type": "Sweater",
+        "color": "Red",
+        "style": "Casual",
+        "image": "./images/sweater5.jpg",
+        "name": "Berry Bliss Sweater"
+    },
+    {
+        "id": 44,
+        "type": "Jacket",
+        "color": "Green",
+        "style": "Outdoor",
+        "image": "./images/jacket5.jpg",
+        "name": "Forest Green Jacket"
+    },
+    {
+        "id": 45,
+        "type": "Shorts",
+        "color": "White",
+        "style": "Casual",
+        "image": "./images/shorts5.jpg",
+        "name": "Lily White Shorts"
+    },
+    {
+        "id": 46,
+        "type": "Dress",
+        "color": "Black",
+        "style": "Formal",
+        "image": "./images/dress5.jpg",
+        "name": "Noir Grace Dress"
+    },
+    {
+        "id": 47,
+        "type": "Skirt",
+        "color": "Blue",
+        "style": "Casual",
+        "image": "./images/skirt5.jpg",
+        "name": "Azure Skirt"
+    },
+    {
+        "id": 48,
+        "type": "Blouse",
+        "color": "Pink",
+        "style": "Formal",
+        "image": "./images/blouse5.jpg",
+        "name": "Blossom Pink Blouse"
+    },
+    {
+        "id": 49,
+        "type": "Pants",
+        "color": "Gray",
+        "style": "Casual",
+        "image": "./images/pants5.jpg",
+        "name": "Smoky Gray Pants"
+    },
+    {
+        "id": 50,
+        "type": "Coat",
+        "color": "Navy",
+        "style": "Winter",
+        "image": "./images/coat5.jpg",
+        "name": "Navy Serenity Coat"
+    }
+]

@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #fefaf6; /* Set the background color to match the original */
+}
+
+header {
+    background-color: #ffd8c5; /* Header background color */
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #8b5e34; /* Logo color */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b5e34; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb49b; /* Link hover color */
+}
+
+/* Additional Styles for Body & Color Analysis Section */
+.analysis-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.analysis-section h2 {
+    font-size: 36px;
+    color: #8b5e34; /* Same color as the wardrobe showcase */
+    margin-bottom: 10px;
+}
+
+.analysis-section p {
+    color: #555; /* Same text color as the wardrobe showcase */
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.analysis-results {
+    margin-top: 30px;
+}
+
+.analysis-results h3 {
+    font-size: 28px;
+    color: #8b5e34; /* Same color as the headings */
+    margin-bottom: 20px;
+}
+
+/* Additional Styles for Ovals */
+.ovals-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the oval windows */
+    margin-top: 40px;
+}
+
+.oval-window {
+    width: 400px; /* Adjusted width for a rectangle look */
+    height: 250px; /* Adjusted height for a rectangle look */
+    border-radius: 30px; /* Rounded corners */
+    padding: 20px;
+    background-color: rgba(255, 228, 196, 0.8); /* Set a solid color background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For positioning the flower images */
+    overflow: hidden;
+}
+
+.oval-window h4 {
+    font-size: 24px;
+    color: #8b5e34; /* Title color */
+    margin-bottom: 10px;
+}
+
+.oval-window p {
+    font-size: 20px;
+    color: #8b5e34; /* Same text color for body type */
+}
+
+.color-swatch,
+.body-image {
+    width: 70%; /* Image size for better fit */
+    height: auto;
+    margin-top: 15px; /* Space above images */
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #fefaf6; /* White background */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* UploadAnalysis.css */
+.upload-analysis {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.analysis-results {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}

@@ -1,0 +1,77 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Light gray background for a softer look */
+    color: #333;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Calendar layout */
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+}
+
+/* Individual day styling */
+.day {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: white; /* White background for days */
+    transition: background-color 0.2s ease; /* Smooth transition for selection */
+    font-size: 0.8em; /* Smaller font size for calendar numbers */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Recommendation section */
+/* Recommendation section */
+#recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: #ffffff; /* White background for recommendations */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex; /* Ensure it respects height */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Input section styling */
+#inputSection {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff; /* White background for input section */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input and select styles */
+input[type="date"],
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    width: 150px; /* Set width for inputs */
+}
+
+/* Placeholder color for inputs */
+input::placeholder, 
+select option {
+    color: #999; /* Soft gray for placeholder */
+}

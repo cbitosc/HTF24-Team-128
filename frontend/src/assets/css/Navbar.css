@@ -1,0 +1,36 @@
+/* Navbar styles */
+.navbar {
+    background-color: #FFD9DB; /* Soft pink background */
+    border-bottom: 1px solid #EFEFEF; /* Light bottom border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    color: #f77b94; /* Changed to crimson color for brand text */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #f77b94 !important; /* Crimson color for links with higher specificity */
+    font-weight: bold; /* Make the link text bold */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A4746D; /* Change link color on hover */
+}
+
+.navbar-toggler {
+    background-color: #A4746D; /* Soft color for toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #f77b94; /* White icon color */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #FFD9DB; /* Background for mobile menu */
+    }
+}

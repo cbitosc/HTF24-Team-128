@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe Outfit Upload</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <h2>Upload Your Outfit Image</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label id="file-label" for="imageInput">Choose an image</label>
+        <input type="file" id="imageInput" name="image" accept="image/*" required>
+        <button type="submit">Upload</button>
+        <button type="button" onclick="window.location.href='display.html'">View Uploaded Images</button>
+    </form>
+
+    <script src="upload.js"></script>
+</body>
+</html>
